@@ -17,7 +17,10 @@ class FavoriteFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id' => \App\Models\User::factory(),
+            'course_id' => \App\Models\Course::factory(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }

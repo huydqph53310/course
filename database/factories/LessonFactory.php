@@ -17,7 +17,14 @@ class LessonFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'course_id' => \App\Models\Course::factory(),
+            'title' => $this->faker->sentence(),
+            'video_url' => $this->faker->url(),
+            'duration' => $this->faker->numberBetween(5, 60),
+            'order' => $this->faker->numberBetween(1, 20),
+            'is_preview' => $this->faker->boolean(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }

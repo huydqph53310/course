@@ -17,7 +17,11 @@ class OrderDetailFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'order_id' => \App\Models\Order::factory(),
+            'course_id' => \App\Models\Course::factory(),
+            'price' => $this->faker->numberBetween(100000, 1000000),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }
