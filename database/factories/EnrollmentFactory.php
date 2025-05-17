@@ -17,7 +17,12 @@ class EnrollmentFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id' => \App\Models\User::factory(),
+            'course_id' => \App\Models\Course::factory(),
+            'progress' => $this->faker->numberBetween(0, 100),
+            'completed_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }

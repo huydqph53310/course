@@ -17,7 +17,11 @@ class QuestionFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'quiz_id' => \App\Models\Quiz::factory(),
+            'question_text' => $this->faker->sentence(),
+            'correct_answer' => $this->faker->word(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }
