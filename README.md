@@ -80,22 +80,16 @@ Seeder đã có sẵn:
 
 Lệnh chạy:
 
-bash
-Copy
-Edit
 php artisan migrate:fresh --seed
 
-
 🔐 Tài khoản mẫu
-Role	| Email	                |   Mật khẩu
-Admin	| admin@example.com	    |   password
-Teacher	| teacher1@example.com	|   password
-Student	| student1@example.com	|   password
+| Role    | Email                  | Mật khẩu |
+| ------- | ---------------------- | -------- |
+| Admin   | `admin@example.com`    | password |
+| Teacher | `teacher1@example.com` | password |
+| Student | `student1@example.com` | password |
 
 🧩 Thư mục chính
-bash
-Copy
-Edit
 app/
 ├── Http/Controllers/      # Xử lý route và logic
 ├── Models/                # Model Eloquent
@@ -103,6 +97,7 @@ app/
 resources/views/           # Giao diện Blade
 database/factories/        # Tạo dữ liệu mẫu
 routes/web.php             # Các tuyến đường chính
+
 
 
 🎯 Kế hoạch mở rộng (roadmap)
