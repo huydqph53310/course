@@ -99,9 +99,7 @@ app/
 resources/views/           # Giao diện Blade
 database/factories/        # Tạo dữ liệu mẫu
 routes/web.php             # Các tuyến đường chính
-
-
-
+```
 🎯 Kế hoạch mở rộng (roadmap)
  Quản lý đơn hàng & báo cáo doanh thu
 
