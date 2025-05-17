@@ -90,6 +90,8 @@ php artisan migrate:fresh --seed
 | Student | `student1@example.com` | password |
 
 🧩 Thư mục chính
+
+```bash
 app/
 ├── Http/Controllers/      # Xử lý route và logic
 ├── Models/                # Model Eloquent
